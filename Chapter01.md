@@ -25,6 +25,28 @@
 **&&, ||**
 && : 모두가 참일때 true, || : 하나라도 참이면 true
 
+```js
+function add (a, b) {
+    return a + b  // returnm은 항상 받아줄 사람이 필요해
+}
+
+function add (a, b) {
+    
+  if(typeof a !== 'number' || typeof b !== 'number') {
+      console.log('숫자만 써야대 ')
+    return  // 함수 끝내기
+  }
+  if (a && b) {
+   return a + b
+  }
+  console.log('인자값이 충분하지 않습니다.')
+}
+
+var result = add(10, 20)
+
+console.log(result)
+```
+
 **++, --**
 증감연산자는 위치에 따라서 동작하는 방식이 다르지만 사용을 지양하는 것이 좋다. +=1로 사용하는것이 직관적
 
